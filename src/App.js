@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+//This handles all the small elements of the website
 import './App.css';
+import FavNav from './NavSect';
+import FavContent from './AboutMe';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+const MyApp = () => (
+    <>
+        <FavNav />
+        <FavContent/>
+    </>
+)
+
+export default MyApp;
